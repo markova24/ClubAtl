@@ -1,6 +1,5 @@
 <?php
 
-use Cuota;
 
 /*
  * Copyright (C) 2016 Usuario

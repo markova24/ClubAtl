@@ -24,10 +24,7 @@
  * @author SergioC
  */
 class Test extends CI_Controller {
-    
 
-    
-    
     public function agregarSocio() {
         require_once(APPPATH . 'models/DTOs/Socio.php');
         $socio = new Socio("0", "Sergio Cabral", "Argentino", "1990-11-21", "Soltero", "1414", "Rocamora 1188", "Alberdi 324", "no tengo", "sergiocabral.1990@gmail.com", "32424", "Activo", NULL, NULL, "1");
@@ -91,10 +88,17 @@ class Test extends CI_Controller {
         $this->load->model('gfamiliar_model');
         $this->gfamiliar_model->deleteGrupoFamiliar($idGrupo);
     }
-    
-    
+
     public function load() {
         $this->load->view('agregarsocio_view');
+    }
+
+    public function loadgc() {
+        $this->load->view('generarcuotas_view');
+    }
+
+    public function loadrp() {
+        $this->load->view('registrarpago_view');
     }
 
 }
